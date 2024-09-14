@@ -25,7 +25,7 @@ jobs:
         uses: actions/checkout@v3 # Specify version
 
       - name: "Setup Terraform in runner"
-        uses: hashicorp/setup-terraform@v2.1.0 # Specify version
+        uses: hashicorp/setup-terraform@v2 # Specify version
 
       - name: "Init Terraform in runner"
         id: init
