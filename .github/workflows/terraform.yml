@@ -48,10 +48,6 @@ jobs:
         if: steps.plan.outcome == 'failure'
         run: "exit 1"
 
-      - name: "Apply Terraform."
-        id: apply
-        run: terraform apply
-
 env:
   AWS_ACCESS_KEY_ID: ${{ secrets.AWS_ACCESS_KEY_ID }}
   AWS_SECRET_ACCESS_KEY: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
