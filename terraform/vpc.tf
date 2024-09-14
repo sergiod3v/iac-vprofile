@@ -2,7 +2,7 @@ module "vpc" {
   source  = "terraform-aws-modules/vpc/aws"
   version = "5.1.2"
 
-  name = "vprofile-eks"
+  name = "sergiod3v-eks-vpc"
 
   cidr = "172.20.0.0/16"
   azs  = slice(data.aws_availability_zones.available.names, 0, 3)
